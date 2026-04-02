@@ -1,17 +1,60 @@
+"use client";
+
+import Search_Card from "@/components/common/page_search/search_card";
+import { useEffect, useState } from "react";
+
+type ReservedCar = {
+  name: string;
+  category: string;
+  price: number;
+  totalPrice: number;
+  image: string;
+  url: string;
+};
+
 export default function UserView() {
-    return(
-              <section className="flex flex-col items-center bg-neutral-50 justify-between h-full">
-                    
-                    {/* Section Principal */}
-                    {/* Aca se importan componentes para visualizar en el Home - cada componente sigue buenas practicas SE0 >:D */}
-                    <>
-                        <main className="w-full h-full flex flex-col items-center bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: "url('/images/home-qs.webp')" }}>
-                            <div className="absolute inset-0 bg-linear-to-b backdrop-blur-xs from-[#141c4e]/80 via-indigo-800/80 to-indigo-500/80" />
-                            <section className="relative z-10 w-full max-w-7xl h-full flex flex-col py-40 px-10   items-center gap-10">
-                         
-                            </section>
-                        </main>
-                    </>
-                </section>
-    )
+  const [reservedCars, setReservedCars] = useState<ReservedCar[]>([]);
+
+  const loadReservations = () => {
+    const cars: ReservedCar[] = [];
+
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith("reserved-")) {
+        const item = localStorage.getItem(key);
+        if (item) cars.push(JSON.parse(item));
+      }
+    }
+
+    setReservedCars(cars);
+  };
+
+  useEffect(() => {
+    loadReservations();
+    window.addEventListener("reservations-updated", loadReservations);
+    return () => window.removeEventListener("reservations-updated", loadReservations);
+  }, []);
+
+  return (
+    <section className="w-full flex flex-col items-center gap-4 p-10 xl:p-0">
+
+      {/* Lista de reservas — solo visible si hay al menos una */}
+      {reservedCars.length > 0 ? (
+        <>
+          <h2 className="w-full  max-w-7xl text-xs text-neutral-800">
+            Reservas activas: {reservedCars.length}
+          </h2>
+          {reservedCars.map((car) => (
+            <Search_Card key={car.name} {...car} />
+          ))}
+        </>
+      ) : (
+        <section className="w-full h-80 bg-neutral-200 flex justify-center items-center">
+          <p className="text-xs text-neutral-800">No tienes reservas activas.</p>
+        </section>
+
+      )}
+
+    </section>
+  );
 }

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full h-auto flex flex-col py-40 gap-20 items-center  text-neutral-800 text-[10px] md:text-xs font-thin">
       <>
-        <section className="w-full max-w-7xl flex flex-col px-10 py-20 md:px-20 md:py-20">
+        <section className="w-full max-w-7xl flex flex-col p-10 xl:p-0">
             <Image src="/images/logo/logo.svg" alt="Home background" width={100} height={100}/>
             
             <div className="flex flex-col md:justify-between py-10 gap-4 md:gap-0">

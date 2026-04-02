@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FiHeart, FiMap, FiMaximize, FiSettings, FiShare } from "react-icons/fi";
+import { useEffect, useState } from "react";
 
 type SearchCardProps = {
   name: string;
@@ -19,51 +22,100 @@ export default function Search_Card({
   image,
   url,
 }: SearchCardProps) {
+
+  const storageKey = `reserved-${name}`;
+
+  const [isReserved, setIsReserved] = useState(false);
+
+  useEffect(() => {
+    const stored = localStorage.getItem(storageKey);
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        setIsReserved(parsed.reserved === true);
+      } catch {
+        setIsReserved(false);
+      }
+    }
+  }, [storageKey]);
+
+  const handleReserve = () => {
+    const newState = !isReserved;
+    setIsReserved(newState);
+
+    if (newState) {
+      // Guardar objeto completo al reservar
+      localStorage.setItem(
+        storageKey,
+        JSON.stringify({ reserved: true, name, category, price, totalPrice, image, url })
+      );
+    } else {
+      // Eliminar del localStorage al cancelar
+      localStorage.removeItem(storageKey);
+    }
+
+    // Disparar evento para que otros componentes reaccionen
+    window.dispatchEvent(new Event("reservations-updated"));
+  };
+
   return (
-    <section className="w-full max-w-7xl flex flex-col lg:flex-row h-auto lg:h-96 hover:bg-[#00e55e]/50 transition-all duration-500 bg-neutral-100 text-neutral-800 font-thin">
-      
-      <div className="p-10 h-full flex justify-center items-center">
-        <Image src={image} alt={name} width={500} height={500} />
-      </div>
-
-      <div className="w-full h-full flex flex-col justify-between text-[10px] md:text-xs gap-4 p-10">
-        
-        <div className="flex flex-row justify-between items-start md:p-4">
-          <span className="flex flex-col">
-            <p>{name}</p>
-            <p>{category}</p>
-          </span>
-
-          <span className="hidden md:flex flex-row gap-4 items-end text-neutral-500/50">
-            <FiMaximize className="hover:text-indigo-500 cursor-pointer" />
-            <FiMap className="hover:text-indigo-500 cursor-pointer" />
-            <FiShare className="hover:text-indigo-500 cursor-pointer" />
-          </span>
+    <section className="w-full max-w-7xl flex flex-col lg:flex-row h-auto lg:h-96 bg-neutral-100 text-neutral-800 font-thin">
+      <>
+        <div className="p-10 h-full flex justify-center items-center">
+          <Image src={image} alt={name} width={500} height={500} />
         </div>
+      </>
+      <>
+        <div className="w-full h-full flex flex-col justify-between text-[10px] md:text-xs gap-4 p-10">
+          <div className="flex flex-row justify-between items-start md:p-4">
+            <span className="flex flex-col">
+              <p>{name}</p>
+              <p>{category}</p>
+            </span>
 
-        <p className="w-full h-2 border-b border-t border-neutral-500/50"></p>
+            <span className="hidden md:flex flex-row gap-4 items-end text-neutral-500/50">
+              <FiMaximize className="hover:text-indigo-500 cursor-pointer" />
+              <FiMap className="hover:text-indigo-500 cursor-pointer" />
+              <FiShare className="hover:text-indigo-500 cursor-pointer" />
+            </span>
+          </div>
 
-        <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
-          
-          <span className="md:p-4">
-            <p>COP $ {price.toLocaleString()}</p>
-            <p>Tarifa por 4 días: {totalPrice.toLocaleString()}</p>
-          </span>
+          <p className="w-full h-2 border-b border-t border-neutral-500/50"></p>
 
-          <span className="flex flex-row gap-2">
-            <Link href={url} className="w-full flex gap-4 items-center hover:bg-indigo-500 hover:text-white p-2 md:p-4 border">
-              Reservar
-              <FiHeart className="hidden md:flex" />
-            </Link>
+          <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
+            
+            <span className="md:p-4">
+              <p>COP $ {price.toLocaleString()}</p>
+              <p>Tarifa por 4 días: {totalPrice.toLocaleString()}</p>
+            </span>
 
-            <Link href={url} className="w-full flex gap-4 items-center hover:bg-indigo-500 hover:text-white p-2 md:p-4 border">
-              Ver más
-              <FiSettings className="hidden md:flex" />
-            </Link>
-          </span>
+            <span className="flex flex-row gap-2">
+              
+              <button
+                onClick={handleReserve}
+                className={`w-full flex gap-4 items-center p-2 md:p-4 border transition-all duration-500 ${
+                  isReserved
+                    ? "bg-red-500 text-white"
+                    : "hover:bg-indigo-500 hover:text-white"
+                }`}
+              >
+                {isReserved ? "Cancelar" : "Reservar"}
+                <FiHeart className="hidden md:flex" />
+              </button>
+
+              <Link
+                href={url}
+                className="w-full flex gap-4 items-center hover:bg-indigo-500 hover:text-white p-2 md:p-4 border"
+              >
+                Ver más
+                <FiSettings className="hidden md:flex" />
+              </Link>
+
+            </span>
+          </div>
+
         </div>
-
-      </div>
+      </>
     </section>
   );
 }

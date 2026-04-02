@@ -10,8 +10,8 @@ export default function Navbar() {
 
   return (
     <nav className="w-full flex flex-col justify-center items-center gap-4">
-      <section className="w-full max-w-7xl h-20 md:h-32 flex flex-row items-center justify-between text-neutral-800 font-thin px-10 py-20 md:px-20 md:py-20">
-        <Link href="/" className="w-auto flex items-center gap-1 cursor-pointer">
+      <section className="w-full max-w-7xl h-20 md:h-32 flex flex-row items-center justify-between text-neutral-800 font-thin p-10 xl:p-0">
+        <Link href="/home" className="w-auto flex items-center gap-1 cursor-pointer">
           <Image src="/images/logo/logo.svg" alt="Logo" width={100} height={100} />
         </Link>
 
