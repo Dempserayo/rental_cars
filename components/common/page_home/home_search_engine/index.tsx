@@ -3,7 +3,7 @@ import { FiCalendar, FiClock, FiLayers, FiMap, FiSearch } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function SearchEngine(){
+export default function Home_Search_Engine(){
     const [activeField, setActiveField] = useState(null);
     const [location, setLocation] = useState("");
     const [date, setDate] = useState("");
@@ -56,12 +56,11 @@ export default function SearchEngine(){
     }, [date, hours]);
 
     return(
-        <section className="w-full max-w-7xl h-auto flex flex-col justify-center items-center font-thin text-neutral-800">
+        <section className="w-full h-auto flex flex-col justify-center items-center font-thin text-neutral-800">
             
             <section className="w-full h-auto bg-[#00e55e] flex flex-row items-center justify-between px-10 py-4">
-                <div className="flex flex-row">    
-                    
-                    <button className={`p-2 ${activeField === "location" ? "text-indigo-500 bg-neutral-100" : ""}`}>
+                <div className="flex flex-row text-[10px] md:text-xs">    
+                    <button className={`p-2 ${activeField === "location" ? " text-indigo-500 bg-neutral-100" : ""}`}>
                         <FiMap />
                     </button>
 
@@ -72,21 +71,17 @@ export default function SearchEngine(){
                     <button className={`p-2 ${activeField === "hours" ? "text-indigo-500 bg-neutral-100" : ""}`}>
                         <FiLayers />
                     </button>
-
-                    <button className={`p-2 ${activeField === "time" ? "text-indigo-500 bg-neutral-100" : ""}`}>
-                        <FiClock />
-                    </button>
                 </div>
                     
-                <Link href='search' className="flex gap-4 items-center text-xs hover:text-indigo-500 transition-all">
+                <Link href='search' className="flex gap-4 items-center text-[10px] md:text-xs hover:text-indigo-500 transition-all">
                     <p>Buscar</p>
                     <FiSearch />
                 </Link>
             </section>
 
-            <section className="w-full flex flex-col bg-neutral-100 p-20 gap-4">
+            <section className="w-full flex flex-col bg-neutral-100 p-10 md:p-20 gap-4">
 
-                <section className="flex gap-4">
+                <section className="flex flex-col md:flex-row gap-4">
                     
                     {/* Ubicación */}
                     <div className="flex flex-col w-full text-xs">
