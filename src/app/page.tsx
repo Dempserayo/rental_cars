@@ -1,12 +1,6 @@
-'use client'
-import { useTranslation } from "react-i18next";
+import HomeView from "./view/view_home";
 
 export default function Home() {
-  const { t } = useTranslation();
+  return ( <HomeView /> );
 
-  return (
-    <>
-      <h1 className="w-full text-center">{t('Welcome to React')}</h1>
-    </>
-  );
 }

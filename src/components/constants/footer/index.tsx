@@ -37,12 +37,12 @@ export default function Footer() {
         </section>
       </>
       <>
-        <section className="w-full h-40 bg-[#00e55e]" />
+        <section className="w-full hidden md:flex h-40 bg-[#00e55e]" />
       </>
       <>
-        <section className="w-full max-w-7xl flex flex-col py-10 p-10 xl:p-0 gap-4 md:gap-0">
+        <section className="w-full max-w-7xl hidden md:flex flex-col py-10 p-10 xl:p-0 gap-4 md:gap-0">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
-            <span className="flex flex-col sm:flex-row sm:gap-4">
+            <span className="flex flex-row gap-4">
               <button type="button" onClick={() => changeLanguage("en")} className="cursor-pointer transition-all duration-500 hover:text-indigo-500">English</button>
               <button type="button" onClick={() => changeLanguage("es")} className="cursor-pointer transition-all duration-500 hover:text-indigo-500">Español</button>
               <button type="button" onClick={() => changeLanguage("pr")} className="cursor-pointer transition-all duration-500 hover:text-indigo-500">Português</button>
