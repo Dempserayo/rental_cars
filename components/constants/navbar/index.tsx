@@ -18,10 +18,6 @@ export default function Navbar() {
         {/* Iconos — visible en md+ */}
         <section className="hidden md:flex flex-row text-sm">
           
-          <button className="cursor-pointer hover:text-indigo-500 transition-all duration-500 hover:bg-neutral-100 p-2">
-            <FiSearch />
-          </button>
-          
           <Link href="/user" className="cursor-pointer hover:text-indigo-500 transition-all duration-500 hover:bg-neutral-100 p-2">
             <FiUser />
           </Link>

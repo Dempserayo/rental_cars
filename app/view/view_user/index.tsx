@@ -4,12 +4,13 @@ import Search_Card from "@/components/common/page_search/search_card";
 import { useEffect, useState } from "react";
 
 type ReservedCar = {
+  slug?: string;
   name: string;
   category: string;
   price: number;
   totalPrice: number;
   image: string;
-  url: string;
+  url?: string;
 };
 
 export default function UserView() {
@@ -45,7 +46,16 @@ export default function UserView() {
             Reservas activas: {reservedCars.length}
           </h2>
           {reservedCars.map((car) => (
-            <Search_Card key={car.name} {...car} />
+            <Search_Card
+              key={car.slug ?? car.name}
+              slug={car.slug ?? car.name}
+              name={car.name}
+              category={car.category}
+              price={car.price}
+              totalPrice={car.totalPrice}
+              image={car.image}
+              url={car.url ?? `/search/${car.slug ?? car.name}`}
+            />
           ))}
         </>
       ) : (

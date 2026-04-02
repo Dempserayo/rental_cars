@@ -1,8 +1,10 @@
-export default function Search_Car_Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+import SlugView from "@/app/view/view_slug"
 
-  return (
-    <div>
-    </div>
-  );
+export default async function SearchCarPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  return <SlugView slug={slug} />
 }

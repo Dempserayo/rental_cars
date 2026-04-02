@@ -1,10 +1,10 @@
 'use client'
-import { FiCalendar, FiClock, FiLayers, FiMap, FiSearch } from "react-icons/fi";
+import { FiCalendar, FiLayers, FiMap, FiSearch } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Home_Search_Engine(){
-    const [activeField, setActiveField] = useState(null);
+    const [activeField, setActiveField] = useState<string | null>(null);
     const [location, setLocation] = useState("");
     const [date, setDate] = useState("");
     const [hours, setHours] = useState("");
@@ -29,7 +29,7 @@ export default function Home_Search_Engine(){
     useEffect(() => {
         if (!date || !hours) return;
 
-        const [year, month, day] = date.split("-");
+        const [year, month, day] = date.split("-").map(Number);
         const pickupDate = new Date(year, month - 1, day);
         const now = new Date();
         const currentHour = now.getHours();

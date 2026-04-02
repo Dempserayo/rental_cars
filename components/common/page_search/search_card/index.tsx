@@ -4,26 +4,33 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiHeart, FiMap, FiMaximize, FiSettings, FiShare } from "react-icons/fi";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { handleReserve } from "@/lib/reservationUtils";
+import { selectVehicle } from "@/store/vehicleSlice";
+import { Vehicle } from "@/lib/vehicles";
 
 type SearchCardProps = {
+  slug: string;
   name: string;
   category: string;
   price: number;
   totalPrice: number;
   image: string;
-  url: string;
+  url?: string;
 };
 
 export default function Search_Card({
+  slug,
   name,
   category,
   price,
   totalPrice,
   image,
-  url,
+  url = `/search/${slug}`,
 }: SearchCardProps) {
 
-  const storageKey = `reserved-${name}`;
+  const dispatch = useDispatch();
+  const storageKey = `reserved-${slug}`;
 
   const [isReserved, setIsReserved] = useState(false);
 
@@ -39,23 +46,15 @@ export default function Search_Card({
     }
   }, [storageKey]);
 
-  const handleReserve = () => {
+  const onReserve = () => {
     const newState = !isReserved;
     setIsReserved(newState);
+    const vehicle: Vehicle = { slug, name, category, price, totalPrice, image };
+    handleReserve(vehicle, isReserved);
+  };
 
-    if (newState) {
-      // Guardar objeto completo al reservar
-      localStorage.setItem(
-        storageKey,
-        JSON.stringify({ reserved: true, name, category, price, totalPrice, image, url })
-      );
-    } else {
-      // Eliminar del localStorage al cancelar
-      localStorage.removeItem(storageKey);
-    }
-
-    // Disparar evento para que otros componentes reaccionen
-    window.dispatchEvent(new Event("reservations-updated"));
+  const onVerMas = () => {
+    dispatch(selectVehicle({ slug, name, category, price, totalPrice, image }));
   };
 
   return (
@@ -92,7 +91,7 @@ export default function Search_Card({
             <span className="flex flex-row gap-2">
               
               <button
-                onClick={handleReserve}
+                onClick={onReserve}
                 className={`w-full flex gap-4 items-center p-2 md:p-4 border transition-all duration-500 ${
                   isReserved
                     ? "bg-red-500 text-white"
@@ -105,6 +104,7 @@ export default function Search_Card({
 
               <Link
                 href={url}
+                onClick={onVerMas}
                 className="w-full flex gap-4 items-center hover:bg-indigo-500 hover:text-white p-2 md:p-4 border"
               >
                 Ver más

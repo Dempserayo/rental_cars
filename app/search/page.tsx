@@ -1,5 +1,7 @@
-import SearchView from "../view/view_search";
+import { fetchVehicles } from "@/lib/vehicles"
+import SearchView from "../view/view_search"
 
-export default function Search() {
-    return( <SearchView/> )
+export default async function Search() {
+  const vehicles = await fetchVehicles()
+  return <SearchView initialVehicles={vehicles} />
 }
