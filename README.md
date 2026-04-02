@@ -1,3 +1,8 @@
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c1dba073-f0ad-4529-8d41-5279ffca1265" />
+<img width="1900" height="1079" alt="image" src="https://github.com/user-attachments/assets/65fde2d7-301e-4e88-b816-a27b018b2ad4" />
+<img width="1902" height="1079" alt="image" src="https://github.com/user-attachments/assets/7f4a7c05-5cf6-4a17-941b-980298618589" />
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/7d8c73d0-53b7-443d-b4db-f6257c8ffcc1" />
+
 # Outlet Rental Cars — Flujo de búsqueda y selección de vehículos
 
 Aplicación web para buscar, explorar y reservar vehículos de alquiler. Permite al usuario ver un catálogo de autos disponibles, consultar el detalle de cada uno y simular el proceso de reserva con precio final calculado.
@@ -80,3 +85,8 @@ El flujo de pago previsto es el siguiente:
 5. El usuario es redirigido al checkout de la pasarela para completar el pago de forma segura.
 6. Una vez completado el pago, la pasarela notifica al backend mediante un webhook.
 7. El backend valida la notificación, confirma la reserva en la base de datos y notifica al usuario (por correo o en la propia aplicación).
+
+
+
+
+
