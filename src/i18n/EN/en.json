@@ -36,7 +36,11 @@
       "hoursPlaceholder": "4 Hours",
       "returnVehicle": "Vehicle Return",
       "searchButton": "Search",
-      "returnInfo": "Pickup: {{pickup}} | Return: {{returnDate}} - {{hour}}:00"
+      "returnInfo": "Pickup: {{pickup}} | Return: {{returnDate}} - {{hour}}:00",
+      "errorLocation": "Please enter a location",
+      "errorDate": "Please select a pickup date",
+      "errorHours": "Please enter the hours of use",
+      "errorSearch": "Search failed, please try again"
     }
   },
   "search": {

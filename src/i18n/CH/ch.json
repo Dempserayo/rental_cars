@@ -36,7 +36,11 @@
       "hoursPlaceholder": "4小时",
       "returnVehicle": "还车",
       "searchButton": "搜索",
-      "returnInfo": "取车: {{pickup}} | 还车: {{returnDate}} - {{hour}}:00"
+      "returnInfo": "取车: {{pickup}} | 还车: {{returnDate}} - {{hour}}:00",
+      "errorLocation": "请输入地点",
+      "errorDate": "请选择取车日期",
+      "errorHours": "请输入使用小时数",
+      "errorSearch": "搜索失败，请重试"
     }
   },
   "search": {

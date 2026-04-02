@@ -36,7 +36,11 @@
       "hoursPlaceholder": "4 часа",
       "returnVehicle": "Возврат автомобиля",
       "searchButton": "Поиск",
-      "returnInfo": "Получение: {{pickup}} | Возврат: {{returnDate}} - {{hour}}:00"
+      "returnInfo": "Получение: {{pickup}} | Возврат: {{returnDate}} - {{hour}}:00",
+      "errorLocation": "Пожалуйста, введите местоположение",
+      "errorDate": "Пожалуйста, выберите дату получения",
+      "errorHours": "Пожалуйста, введите часы использования",
+      "errorSearch": "Ошибка поиска, попробуйте снова"
     }
   },
   "search": {

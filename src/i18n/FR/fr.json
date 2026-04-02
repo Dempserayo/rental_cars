@@ -36,7 +36,11 @@
       "hoursPlaceholder": "4 Heures",
       "returnVehicle": "Retour du Véhicule",
       "searchButton": "Rechercher",
-      "returnInfo": "Prise en charge: {{pickup}} | Retour: {{returnDate}} - {{hour}}:00"
+      "returnInfo": "Prise en charge: {{pickup}} | Retour: {{returnDate}} - {{hour}}:00",
+      "errorLocation": "Veuillez entrer un lieu",
+      "errorDate": "Veuillez sélectionner une date de prise en charge",
+      "errorHours": "Veuillez entrer les heures d'utilisation",
+      "errorSearch": "Erreur de recherche, veuillez réessayer"
     }
   },
   "search": {

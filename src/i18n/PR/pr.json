@@ -36,7 +36,11 @@
       "hoursPlaceholder": "4 Horas",
       "returnVehicle": "Devolução do Veículo",
       "searchButton": "Pesquisar",
-      "returnInfo": "Retirada do veículo: {{pickup}} | Devolução: {{returnDate}} - {{hour}}:00"
+      "returnInfo": "Retirada do veículo: {{pickup}} | Devolução: {{returnDate}} - {{hour}}:00",
+      "errorLocation": "Por favor insira uma localização",
+      "errorDate": "Por favor selecione uma data de retirada",
+      "errorHours": "Por favor insira as horas de uso",
+      "errorSearch": "Erro na pesquisa, tente novamente"
     }
   },
   "search": {
