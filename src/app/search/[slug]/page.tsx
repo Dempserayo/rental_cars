@@ -1,4 +1,4 @@
-import SlugView from "@/app/view/view_slug"
+import SlugView from "@/src/app/view/view_slug"
 
 export default async function SearchCarPage({
   params,

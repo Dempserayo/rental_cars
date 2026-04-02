@@ -1,4 +1,3 @@
-'use client'
 import { fetchVehicles } from "@/src/lib/vehicles"
 import SearchView from "../view/view_search"
 
