@@ -51,7 +51,74 @@
     "perDay": "/ день",
     "finalPrice": "Итоговая цена (4 дня): COP $",
     "backToSearch": "Вернуться к поиску",
-    "vehicleNotFound": "Автомобиль не найден"
+    "vehicleNotFound": "Автомобиль не найден",
+    "steps": {
+      "selection": "Выбор",
+      "reservation": "Бронирование",
+      "payment": "Оплата",
+      "stepOf": "Шаг 2 из 3"
+    },
+    "orSimilar": "или аналог",
+    "specs": {
+      "passengers": "7 чел.",
+      "luggage": "4 чемодана",
+      "ac": "Кондиционер",
+      "transmission": "Автомат"
+    },
+    "discount": "Скидка 45%",
+    "validUntilMidnight": "Действует до полуночи",
+    "pickupLocation": "Место получения",
+    "returnLocation": "Место возврата",
+    "includedInPrice": "Включено в цену",
+    "insurances": "Страховки",
+    "insuranceItems": {
+      "ldw": "Страховка авто (LDW)",
+      "tp": "Защита от угона (TP)",
+      "noDeductibles": "Без франшизы"
+    },
+    "benefits": "Преимущества",
+    "benefitItems": {
+      "taxes": "Все налоги включены",
+      "unlimited": "Неограниченный пробег",
+      "noAdmin": "Без административных сборов",
+      "roadside": "Помощь на дороге",
+      "additionalDriver": "Дополнительный водитель +25 лет",
+      "fullToFull": "Политика полный-полный"
+    },
+    "travelInsurance": "Страховка путешествия",
+    "travelInsuranceFree": "Бесплатно",
+    "travelInsuranceCovers": "Покрывает 5 пассажиров",
+    "travelItems": {
+      "medical": "Медицинская помощь при несчастном случае",
+      "luggage": "Потеря багажа авиакомпанией",
+      "medication": "Рецептурные лекарства",
+      "legal": "Юридическая помощь на дороге",
+      "cancellation": "Многопричинная отмена",
+      "delayed": "Расходы при задержке рейса (6ч)"
+    },
+    "travelAmounts": {
+      "medical": "USD 55 000",
+      "luggage": "USD 1 000",
+      "medication": "USD 500",
+      "legal": "USD 2 000",
+      "cancellation": "USD 600",
+      "delayed": "USD 100"
+    },
+    "reservationSummary": "Сводка бронирования",
+    "totalToPay": "Итого к оплате",
+    "usdNote": "Ваша транзакция будет обработана на USD 319.12",
+    "additionalServices": "Дополнительные услуги",
+    "services": {
+      "thirdParty": "Защита от ущерба третьим лицам",
+      "firstTank": "Защита + Первый бак бензина",
+      "tablet": "Защита + Планшет | WIFI"
+    },
+    "driverInfo": "Данные водителя",
+    "fullName": "Полное имя",
+    "phone": "Номер телефона",
+    "email": "Адрес электронной почты",
+    "next": "Продолжить",
+    "secureInfo": "Ваши данные в безопасности"
   },
   "user": {
     "activeReservations": "Активные бронирования:",

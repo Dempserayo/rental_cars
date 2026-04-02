@@ -51,7 +51,74 @@
     "perDay": "/ 日",
     "finalPrice": "最終価格（4日間）: COP $",
     "backToSearch": "検索に戻る",
-    "vehicleNotFound": "車両が見つかりません"
+    "vehicleNotFound": "車両が見つかりません",
+    "steps": {
+      "selection": "選択",
+      "reservation": "予約",
+      "payment": "支払い",
+      "stepOf": "ステップ 2 / 3"
+    },
+    "orSimilar": "または同等車",
+    "specs": {
+      "passengers": "7名",
+      "luggage": "スーツケース4個",
+      "ac": "エアコン",
+      "transmission": "オートマ"
+    },
+    "discount": "45%割引",
+    "validUntilMidnight": "深夜まで有効",
+    "pickupLocation": "受取場所",
+    "returnLocation": "返却場所",
+    "includedInPrice": "料金に含まれるもの",
+    "insurances": "保険",
+    "insuranceItems": {
+      "ldw": "車両保険 (LDW)",
+      "tp": "盗難補償 (TP)",
+      "noDeductibles": "免責なし"
+    },
+    "benefits": "特典",
+    "benefitItems": {
+      "taxes": "全税込み",
+      "unlimited": "走行距離無制限",
+      "noAdmin": "管理手数料なし",
+      "roadside": "ロードサービス",
+      "additionalDriver": "追加ドライバー +25歳",
+      "fullToFull": "満タン返し"
+    },
+    "travelInsurance": "旅行保険",
+    "travelInsuranceFree": "無料",
+    "travelInsuranceCovers": "5名まで補償",
+    "travelItems": {
+      "medical": "事故医療支援",
+      "luggage": "航空会社手荷物紛失",
+      "medication": "処方薬",
+      "legal": "交通法律支援",
+      "cancellation": "多事由キャンセル",
+      "delayed": "フライト遅延費用（6時間）"
+    },
+    "travelAmounts": {
+      "medical": "USD 55,000",
+      "luggage": "USD 1,000",
+      "medication": "USD 500",
+      "legal": "USD 2,000",
+      "cancellation": "USD 600",
+      "delayed": "USD 100"
+    },
+    "reservationSummary": "予約概要",
+    "totalToPay": "お支払い合計",
+    "usdNote": "取引はUSD 319.12で処理されます",
+    "additionalServices": "追加サービス",
+    "services": {
+      "thirdParty": "第三者損害補償",
+      "firstTank": "補償 + 初回満タン",
+      "tablet": "補償 + タブレット | WIFI"
+    },
+    "driverInfo": "ドライバー情報",
+    "fullName": "氏名",
+    "phone": "電話番号",
+    "email": "メールアドレス",
+    "next": "次へ",
+    "secureInfo": "お客様の情報は安全です"
   },
   "user": {
     "activeReservations": "アクティブな予約:",

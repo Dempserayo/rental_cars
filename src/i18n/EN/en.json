@@ -51,7 +51,74 @@
     "perDay": "/ day",
     "finalPrice": "Final price (4 days): COP $",
     "backToSearch": "Back to search",
-    "vehicleNotFound": "Vehicle not found"
+    "vehicleNotFound": "Vehicle not found",
+    "steps": {
+      "selection": "Selection",
+      "reservation": "Reservation",
+      "payment": "Payment",
+      "stepOf": "Step 2 of 3"
+    },
+    "orSimilar": "or similar",
+    "specs": {
+      "passengers": "7 pass.",
+      "luggage": "4 bags",
+      "ac": "A/C",
+      "transmission": "Automatic"
+    },
+    "discount": "45% discount",
+    "validUntilMidnight": "Valid until midnight",
+    "pickupLocation": "Pickup Location",
+    "returnLocation": "Return Location",
+    "includedInPrice": "Included in price",
+    "insurances": "Insurances",
+    "insuranceItems": {
+      "ldw": "Car Insurance (LDW)",
+      "tp": "Theft Coverage (TP)",
+      "noDeductibles": "No Deductibles"
+    },
+    "benefits": "Benefits",
+    "benefitItems": {
+      "taxes": "All taxes included",
+      "unlimited": "Unlimited kilometers",
+      "noAdmin": "No administrative fees",
+      "roadside": "Roadside assistance",
+      "additionalDriver": "Additional driver +25 years",
+      "fullToFull": "Full to Full Policy"
+    },
+    "travelInsurance": "Travel Insurance",
+    "travelInsuranceFree": "Free",
+    "travelInsuranceCovers": "Covers 5 passengers",
+    "travelItems": {
+      "medical": "Accident Medical Assistance",
+      "luggage": "Airline Luggage Loss",
+      "medication": "Prescription Medications",
+      "legal": "Traffic Legal Assistance",
+      "cancellation": "Multi-cause Cancellation",
+      "delayed": "Delayed Flight Expenses (6h)"
+    },
+    "travelAmounts": {
+      "medical": "USD 55,000",
+      "luggage": "USD 1,000",
+      "medication": "USD 500",
+      "legal": "USD 2,000",
+      "cancellation": "USD 600",
+      "delayed": "USD 100"
+    },
+    "reservationSummary": "Reservation Summary",
+    "totalToPay": "Total to pay",
+    "usdNote": "Your transaction will be processed for USD 319.12",
+    "additionalServices": "Additional Services",
+    "services": {
+      "thirdParty": "Third Party Damage Protection",
+      "firstTank": "Protection + First Tank of Gas",
+      "tablet": "Protection + Tablet | WIFI"
+    },
+    "driverInfo": "Driver Information",
+    "fullName": "Full name",
+    "phone": "Phone number",
+    "email": "Email address",
+    "next": "Continue",
+    "secureInfo": "Your information is secure"
   },
   "user": {
     "activeReservations": "Active reservations:",

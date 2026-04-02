@@ -51,7 +51,74 @@
     "perDay": "/ jour",
     "finalPrice": "Prix final (4 jours) : COP $",
     "backToSearch": "Retour à la recherche",
-    "vehicleNotFound": "Véhicule introuvable"
+    "vehicleNotFound": "Véhicule introuvable",
+    "steps": {
+      "selection": "Sélection",
+      "reservation": "Réservation",
+      "payment": "Paiement",
+      "stepOf": "Étape 2 sur 3"
+    },
+    "orSimilar": "ou similaire",
+    "specs": {
+      "passengers": "7 pers.",
+      "luggage": "4 bagages",
+      "ac": "Clim.",
+      "transmission": "Automatique"
+    },
+    "discount": "45% de réduction",
+    "validUntilMidnight": "Valable jusqu'à minuit",
+    "pickupLocation": "Lieu de Prise en Charge",
+    "returnLocation": "Lieu de Retour",
+    "includedInPrice": "Inclus dans le prix",
+    "insurances": "Assurances",
+    "insuranceItems": {
+      "ldw": "Assurance Auto (LDW)",
+      "tp": "Couverture Vol (TP)",
+      "noDeductibles": "Sans Franchise"
+    },
+    "benefits": "Avantages",
+    "benefitItems": {
+      "taxes": "Toutes taxes incluses",
+      "unlimited": "Kilométrage illimité",
+      "noAdmin": "Sans frais administratifs",
+      "roadside": "Assistance routière",
+      "additionalDriver": "Conducteur additionnel +25 ans",
+      "fullToFull": "Politique Plein à Plein"
+    },
+    "travelInsurance": "Assurance Voyage",
+    "travelInsuranceFree": "Gratuit",
+    "travelInsuranceCovers": "Couvre 5 passagers",
+    "travelItems": {
+      "medical": "Assistance Médicale Accident",
+      "luggage": "Perte Bagages Compagnie Aérienne",
+      "medication": "Médicaments sur Ordonnance",
+      "legal": "Assistance Juridique Routière",
+      "cancellation": "Annulation Multi-cause",
+      "delayed": "Frais Vol Retardé (6h)"
+    },
+    "travelAmounts": {
+      "medical": "USD 55 000",
+      "luggage": "USD 1 000",
+      "medication": "USD 500",
+      "legal": "USD 2 000",
+      "cancellation": "USD 600",
+      "delayed": "USD 100"
+    },
+    "reservationSummary": "Résumé de Réservation",
+    "totalToPay": "Total à payer",
+    "usdNote": "Votre transaction sera traitée pour USD 319.12",
+    "additionalServices": "Services Additionnels",
+    "services": {
+      "thirdParty": "Protection Dommages Tiers",
+      "firstTank": "Protection + Premier Plein d'Essence",
+      "tablet": "Protection + Tablette | WIFI"
+    },
+    "driverInfo": "Informations du Conducteur",
+    "fullName": "Nom complet",
+    "phone": "Numéro de téléphone",
+    "email": "Adresse e-mail",
+    "next": "Continuer",
+    "secureInfo": "Vos informations sont sécurisées"
   },
   "user": {
     "activeReservations": "Réservations actives :",

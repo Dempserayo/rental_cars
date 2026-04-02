@@ -51,7 +51,74 @@
     "perDay": "/ 天",
     "finalPrice": "最终价格（4天）: COP $",
     "backToSearch": "返回搜索",
-    "vehicleNotFound": "未找到车辆"
+    "vehicleNotFound": "未找到车辆",
+    "steps": {
+      "selection": "选择",
+      "reservation": "预订",
+      "payment": "付款",
+      "stepOf": "第 2 步，共 3 步"
+    },
+    "orSimilar": "或同类车型",
+    "specs": {
+      "passengers": "7人",
+      "luggage": "4件行李",
+      "ac": "空调",
+      "transmission": "自动挡"
+    },
+    "discount": "45%折扣",
+    "validUntilMidnight": "有效至午夜",
+    "pickupLocation": "取车地点",
+    "returnLocation": "还车地点",
+    "includedInPrice": "价格包含",
+    "insurances": "保险",
+    "insuranceItems": {
+      "ldw": "车辆保险 (LDW)",
+      "tp": "盗窃险 (TP)",
+      "noDeductibles": "无免赔额"
+    },
+    "benefits": "权益",
+    "benefitItems": {
+      "taxes": "含所有税费",
+      "unlimited": "不限里程",
+      "noAdmin": "无行政费用",
+      "roadside": "道路救援",
+      "additionalDriver": "附加驾驶员 +25岁",
+      "fullToFull": "满油还满油"
+    },
+    "travelInsurance": "旅行保险",
+    "travelInsuranceFree": "免费",
+    "travelInsuranceCovers": "覆盖5名乘客",
+    "travelItems": {
+      "medical": "意外医疗援助",
+      "luggage": "航空公司行李丢失",
+      "medication": "处方药",
+      "legal": "交通法律援助",
+      "cancellation": "多原因取消",
+      "delayed": "航班延误费用（6小时）"
+    },
+    "travelAmounts": {
+      "medical": "USD 55,000",
+      "luggage": "USD 1,000",
+      "medication": "USD 500",
+      "legal": "USD 2,000",
+      "cancellation": "USD 600",
+      "delayed": "USD 100"
+    },
+    "reservationSummary": "预订摘要",
+    "totalToPay": "应付总额",
+    "usdNote": "您的交易将以USD 319.12处理",
+    "additionalServices": "附加服务",
+    "services": {
+      "thirdParty": "第三方损害保障",
+      "firstTank": "保障 + 首次加满油",
+      "tablet": "保障 + 平板电脑 | WIFI"
+    },
+    "driverInfo": "驾驶员信息",
+    "fullName": "全名",
+    "phone": "电话号码",
+    "email": "电子邮件地址",
+    "next": "继续",
+    "secureInfo": "您的信息是安全的"
   },
   "user": {
     "activeReservations": "活跃预订:",
