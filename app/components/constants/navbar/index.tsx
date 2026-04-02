@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FiSearch, FiSettings, FiUser } from "react-icons/fi";
 
 export default function Navbar() {
@@ -19,9 +20,9 @@ export default function Navbar() {
                 <FiSearch />
               </button>
         
-              <button className="cursor-pointer hover:text-indigo-500 transition-all duration-500 hover:bg-neutral-100 p-2">
+              <Link href='/users' className="cursor-pointer hover:text-indigo-500 transition-all duration-500 hover:bg-neutral-100 p-2">
                 <FiUser />
-              </button>
+              </Link>
               <button className="cursor-pointer hover:text-indigo-500 transition-all duration-500 hover:bg-neutral-100 p-2">
                 <FiSettings />
               </button>
