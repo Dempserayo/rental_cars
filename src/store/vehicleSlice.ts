@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Vehicle } from '@/lib/vehicles'
+import { Vehicle } from '@/src/lib/vehicles'
 
 interface VehicleState {
   results: Vehicle[]

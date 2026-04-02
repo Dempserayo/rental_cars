@@ -1,4 +1,4 @@
-import { Vehicle } from "@/lib/vehicles"
+import { Vehicle } from "@/src/lib/vehicles"
 
 export function handleReserve(vehicle: Vehicle, isReserved: boolean): void {
   const storageKey = `reserved-${vehicle.slug}`

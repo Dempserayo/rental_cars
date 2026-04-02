@@ -45,12 +45,12 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
   ]
 
   const travelItems = [
-    { label: t("slug.travelItems.medical"),    amount: t("slug.travelAmounts.medical") },
-    { label: t("slug.travelItems.luggage"),    amount: t("slug.travelAmounts.luggage") },
-    { label: t("slug.travelItems.medication"), amount: t("slug.travelAmounts.medication") },
-    { label: t("slug.travelItems.legal"),      amount: t("slug.travelAmounts.legal") },
+    { label: t("slug.travelItems.medical"),      amount: t("slug.travelAmounts.medical") },
+    { label: t("slug.travelItems.luggage"),      amount: t("slug.travelAmounts.luggage") },
+    { label: t("slug.travelItems.medication"),   amount: t("slug.travelAmounts.medication") },
+    { label: t("slug.travelItems.legal"),        amount: t("slug.travelAmounts.legal") },
     { label: t("slug.travelItems.cancellation"), amount: t("slug.travelAmounts.cancellation") },
-    { label: t("slug.travelItems.delayed"),    amount: t("slug.travelAmounts.delayed") },
+    { label: t("slug.travelItems.delayed"),      amount: t("slug.travelAmounts.delayed") },
   ]
 
   const additionalServices = [
@@ -61,8 +61,7 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
 
   return (
     <section className="min-h-screen bg-[#f8f8f6] font-light">
-
-      {/* Top progress bar */}
+      {/* Progress bar */}
       <div className="w-full bg-white border-b border-neutral-100">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2 text-[10px] tracking-widest uppercase text-neutral-400">
@@ -88,8 +87,8 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
           <div className="bg-white border border-neutral-100 p-6 flex flex-col sm:flex-row gap-6 items-start">
             <div className="w-full sm:w-48 h-32 relative shrink-0 bg-neutral-50 flex items-center justify-center">
               <Image
-                src={vehicle.image || "/images/car-placeholder.png"}
-                alt={vehicle.name || "Vehicle"}
+                src={vehicle.image}
+                alt={vehicle.name}
                 fill
                 className="object-contain p-2"
               />
@@ -97,28 +96,27 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
             <div className="flex flex-col gap-3 flex-1">
               <div className="flex items-start justify-between gap-4 flex-wrap">
                 <div>
-                  <p className="text-[10px] tracking-widest uppercase text-neutral-400 mb-1">{vehicle.category || "Minivan"}</p>
+                  <p className="text-[10px] tracking-widest uppercase text-neutral-400 mb-1">{vehicle.category}</p>
                   <h1 className="text-xl font-normal text-neutral-900 tracking-tight">
-                    {vehicle.name || "CHRYSLER Pacifica"}
+                    {vehicle.name}
                     <span className="text-xs text-neutral-400 font-light ml-2">{t("slug.orSimilar")}</span>
                   </h1>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="border border-neutral-200 px-3 py-1 text-[10px] tracking-widest uppercase text-neutral-500">
-                    {vehicle.supplier || "AVIS"}
+                    AVIS
                   </div>
                   <div className="flex items-center gap-1">
                     <span className="text-neutral-800 text-sm">4.9</span>
                     <div className="flex gap-0.5">
                       {[1,2,3,4,5].map(i => (
-                        <div key={i} className={`w-1.5 h-1.5 rounded-full ${i <= 4 ? 'bg-amber-400' : 'bg-neutral-200'}`} />
+                        <div key={i} className={`w-1.5 h-1.5 rounded-full ${i <= 4 ? "bg-amber-400" : "bg-neutral-200"}`} />
                       ))}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Specs */}
               <div className="flex gap-4 text-[10px] tracking-widest uppercase text-neutral-400">
                 <span>{t("slug.specs.passengers")}</span>
                 <span>·</span>
@@ -129,7 +127,6 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
                 <span>{t("slug.specs.transmission")}</span>
               </div>
 
-              {/* Discount badge */}
               <div className="flex items-center gap-3">
                 <div className="bg-neutral-900 text-white text-[10px] tracking-widest uppercase px-3 py-1.5">
                   {t("slug.discount")}
@@ -162,7 +159,7 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
             ))}
           </div>
 
-          {/* Included */}
+          {/* Included in price */}
           <div className="bg-white border border-neutral-100 p-6">
             <p className="text-[9px] tracking-widest uppercase text-neutral-400 mb-5">{t("slug.includedInPrice")}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
@@ -207,9 +204,10 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
               ))}
             </div>
           </div>
+
         </div>
 
-        {/* RIGHT COLUMN — Sticky summary */}
+        {/* RIGHT COLUMN */}
         <div className="flex flex-col gap-4 lg:sticky lg:top-6 self-start">
 
           {/* Price summary */}
@@ -218,13 +216,11 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
             <div className="flex items-baseline justify-between">
               <span className="text-[10px] tracking-widest uppercase text-neutral-500">{t("slug.totalToPay")}</span>
               <span className="text-lg text-neutral-900 tracking-tight">
-                COP {finalPrice?.toLocaleString("es-CO") || "1.170.911"}
+                COP {finalPrice?.toLocaleString("es-CO")}
               </span>
             </div>
             <p className="text-[9px] text-neutral-400">{t("slug.usdNote")}</p>
             <div className="h-px bg-neutral-100" />
-
-            {/* Additional services */}
             <p className="text-[9px] tracking-widest uppercase text-neutral-400">{t("slug.additionalServices")}</p>
             {additionalServices.map((svc) => (
               <div key={svc.name} className="flex items-center justify-between gap-3">
@@ -272,6 +268,7 @@ export default function SlugView({ slug: _slug }: SlugViewProps) {
           <p className="text-center text-[9px] tracking-widest uppercase text-emerald-500">
             {t("slug.secureInfo")}
           </p>
+
         </div>
       </div>
     </section>
