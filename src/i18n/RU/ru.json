@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "cancelationPolicies": "Политика отмены",
+    "privacyPolicies": "Политика конфиденциальности",
+    "termsAndConditions": "Условия использования",
+    "siteMap": "Карта сайта",
+    "complaints": "Жалобы и претензии",
+    "cancelReservation": "Отменить мою бронь",
+    "faq": "Часто задаваемые вопросы",
+    "myReservations": "Мои бронирования",
+    "changeLanguage": "Изменить язык",
+    "copyright": "© Copyright 2026. Все права защищены."
+  },
+  "navbar": {
+    "search": "Поиск",
+    "user": "Пользователь",
+    "settings": "Настройки"
+  },
+  "home": {
+    "banner": {
+      "title": "Предложения по аренде авто в",
+      "titleHighlight": "Америке",
+      "subtitle": "Скидки до",
+      "subtitleHighlight": "40%",
+      "subtitleSuffix": "в США"
+    },
+    "description": {
+      "left": "Воспользуйтесь лучшими предложениями по аренде авто!",
+      "right": "Получите скидку 40% прямо сейчас"
+    },
+    "search": {
+      "location": "Местоположение",
+      "locationPlaceholder": "Аэропорт Богота / Колумбия",
+      "pickupDate": "Дата получения",
+      "hoursOfUse": "Часы использования",
+      "hoursPlaceholder": "4 часа",
+      "returnVehicle": "Возврат автомобиля",
+      "searchButton": "Поиск",
+      "returnInfo": "Получение: {{pickup}} | Возврат: {{returnDate}} - {{hour}}:00"
+    }
+  },
+  "search": {
+    "card": {
+      "rateFor4Days": "Тариф за 4 дня:",
+      "reserve": "Забронировать",
+      "cancel": "Отменить",
+      "viewMore": "Подробнее"
+    }
+  },
+  "slug": {
+    "perDay": "/ день",
+    "finalPrice": "Итоговая цена (4 дня): COP $",
+    "backToSearch": "Вернуться к поиску",
+    "vehicleNotFound": "Автомобиль не найден"
+  },
+  "user": {
+    "activeReservations": "Активные бронирования:",
+    "noReservations": "У вас нет активных бронирований."
+  }
+}

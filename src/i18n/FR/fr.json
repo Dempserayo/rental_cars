@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "cancelationPolicies": "Politiques d'Annulation",
+    "privacyPolicies": "Politiques de Confidentialité",
+    "termsAndConditions": "Termes et Conditions",
+    "siteMap": "Plan du Site",
+    "complaints": "Pétitions, Plaintes et Réclamations",
+    "cancelReservation": "Annuler Ma Réservation",
+    "faq": "Questions Fréquentes",
+    "myReservations": "Mes Réservations",
+    "changeLanguage": "Changer de Langue",
+    "copyright": "© Copyright 2026. Tous droits réservés."
+  },
+  "navbar": {
+    "search": "Rechercher",
+    "user": "Utilisateur",
+    "settings": "Paramètres"
+  },
+  "home": {
+    "banner": {
+      "title": "Offres de Location de voitures en",
+      "titleHighlight": "Amérique",
+      "subtitle": "Réductions jusqu'à",
+      "subtitleHighlight": "40%",
+      "subtitleSuffix": "aux États-Unis"
+    },
+    "description": {
+      "left": "Profitez des meilleures offres de location de voitures !",
+      "right": "Obtenez 40% de réduction maintenant"
+    },
+    "search": {
+      "location": "Lieu",
+      "locationPlaceholder": "Aéroport de Bogotá / Colombie",
+      "pickupDate": "Date de Prise en Charge",
+      "hoursOfUse": "Heures d'utilisation",
+      "hoursPlaceholder": "4 Heures",
+      "returnVehicle": "Retour du Véhicule",
+      "searchButton": "Rechercher",
+      "returnInfo": "Prise en charge: {{pickup}} | Retour: {{returnDate}} - {{hour}}:00"
+    }
+  },
+  "search": {
+    "card": {
+      "rateFor4Days": "Tarif pour 4 jours :",
+      "reserve": "Réserver",
+      "cancel": "Annuler",
+      "viewMore": "Voir plus"
+    }
+  },
+  "slug": {
+    "perDay": "/ jour",
+    "finalPrice": "Prix final (4 jours) : COP $",
+    "backToSearch": "Retour à la recherche",
+    "vehicleNotFound": "Véhicule introuvable"
+  },
+  "user": {
+    "activeReservations": "Réservations actives :",
+    "noReservations": "Vous n'avez aucune réservation active."
+  }
+}

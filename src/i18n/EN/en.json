@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "cancelationPolicies": "Cancellation Policies",
+    "privacyPolicies": "Privacy Policies",
+    "termsAndConditions": "Terms and Conditions",
+    "siteMap": "Site Map",
+    "complaints": "Complaints and Claims",
+    "cancelReservation": "Cancel My Reservation",
+    "faq": "Frequently Asked Questions",
+    "myReservations": "My Reservations",
+    "changeLanguage": "Change Language",
+    "copyright": "© Copyright 2026. All rights reserved."
+  },
+  "navbar": {
+    "search": "Search",
+    "user": "User",
+    "settings": "Settings"
+  },
+  "home": {
+    "banner": {
+      "title": "Car Rental Deals in",
+      "titleHighlight": "America",
+      "subtitle": "Discounts up to",
+      "subtitleHighlight": "40%",
+      "subtitleSuffix": "in the USA"
+    },
+    "description": {
+      "left": "Take advantage of the best car rental deals!",
+      "right": "Get 40% off right now"
+    },
+    "search": {
+      "location": "Location",
+      "locationPlaceholder": "Bogotá Airport / Colombia",
+      "pickupDate": "Pickup Date",
+      "hoursOfUse": "Hours of use",
+      "hoursPlaceholder": "4 Hours",
+      "returnVehicle": "Vehicle Return",
+      "searchButton": "Search",
+      "returnInfo": "Pickup: {{pickup}} | Return: {{returnDate}} - {{hour}}:00"
+    }
+  },
+  "search": {
+    "card": {
+      "rateFor4Days": "Rate for 4 days:",
+      "reserve": "Reserve",
+      "cancel": "Cancel",
+      "viewMore": "View more"
+    }
+  },
+  "slug": {
+    "perDay": "/ day",
+    "finalPrice": "Final price (4 days): COP $",
+    "backToSearch": "Back to search",
+    "vehicleNotFound": "Vehicle not found"
+  },
+  "user": {
+    "activeReservations": "Active reservations:",
+    "noReservations": "You have no active reservations."
+  }
+}

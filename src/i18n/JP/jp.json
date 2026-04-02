@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "cancelationPolicies": "キャンセルポリシー",
+    "privacyPolicies": "プライバシーポリシー",
+    "termsAndConditions": "利用規約",
+    "siteMap": "サイトマップ",
+    "complaints": "苦情と請求",
+    "cancelReservation": "予約をキャンセルする",
+    "faq": "よくある質問",
+    "myReservations": "私の予約",
+    "changeLanguage": "言語を変更する",
+    "copyright": "© Copyright 2026. 全著作権所有。"
+  },
+  "navbar": {
+    "search": "検索",
+    "user": "ユーザー",
+    "settings": "設定"
+  },
+  "home": {
+    "banner": {
+      "title": "アメリカのレンタカーお得情報",
+      "titleHighlight": "アメリカ",
+      "subtitle": "最大",
+      "subtitleHighlight": "40%",
+      "subtitleSuffix": "割引（アメリカ）"
+    },
+    "description": {
+      "left": "最高のレンタカーお得情報をご利用ください！",
+      "right": "今すぐ40%オフを手に入れよう"
+    },
+    "search": {
+      "location": "場所",
+      "locationPlaceholder": "ボゴタ空港 / コロンビア",
+      "pickupDate": "受取日",
+      "hoursOfUse": "利用時間",
+      "hoursPlaceholder": "4時間",
+      "returnVehicle": "車両の返却",
+      "searchButton": "検索",
+      "returnInfo": "受取: {{pickup}} | 返却: {{returnDate}} - {{hour}}:00"
+    }
+  },
+  "search": {
+    "card": {
+      "rateFor4Days": "4日間の料金:",
+      "reserve": "予約する",
+      "cancel": "キャンセル",
+      "viewMore": "詳細を見る"
+    }
+  },
+  "slug": {
+    "perDay": "/ 日",
+    "finalPrice": "最終価格（4日間）: COP $",
+    "backToSearch": "検索に戻る",
+    "vehicleNotFound": "車両が見つかりません"
+  },
+  "user": {
+    "activeReservations": "アクティブな予約:",
+    "noReservations": "アクティブな予約はありません。"
+  }
+}

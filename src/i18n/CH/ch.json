@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "cancelationPolicies": "取消政策",
+    "privacyPolicies": "隐私政策",
+    "termsAndConditions": "条款和条件",
+    "siteMap": "网站地图",
+    "complaints": "投诉与索赔",
+    "cancelReservation": "取消我的预订",
+    "faq": "常见问题",
+    "myReservations": "我的预订",
+    "changeLanguage": "更改语言",
+    "copyright": "© 版权所有 2026。保留所有权利。"
+  },
+  "navbar": {
+    "search": "搜索",
+    "user": "用户",
+    "settings": "设置"
+  },
+  "home": {
+    "banner": {
+      "title": "美洲租车优惠",
+      "titleHighlight": "美洲",
+      "subtitle": "最高优惠",
+      "subtitleHighlight": "40%",
+      "subtitleSuffix": "（美国）"
+    },
+    "description": {
+      "left": "抓住最优惠的租车机会！",
+      "right": "立即享受40%折扣"
+    },
+    "search": {
+      "location": "地点",
+      "locationPlaceholder": "波哥大机场 / 哥伦比亚",
+      "pickupDate": "取车日期",
+      "hoursOfUse": "使用小时数",
+      "hoursPlaceholder": "4小时",
+      "returnVehicle": "还车",
+      "searchButton": "搜索",
+      "returnInfo": "取车: {{pickup}} | 还车: {{returnDate}} - {{hour}}:00"
+    }
+  },
+  "search": {
+    "card": {
+      "rateFor4Days": "4天费率:",
+      "reserve": "预订",
+      "cancel": "取消",
+      "viewMore": "查看更多"
+    }
+  },
+  "slug": {
+    "perDay": "/ 天",
+    "finalPrice": "最终价格（4天）: COP $",
+    "backToSearch": "返回搜索",
+    "vehicleNotFound": "未找到车辆"
+  },
+  "user": {
+    "activeReservations": "活跃预订:",
+    "noReservations": "您没有活跃的预订。"
+  }
+}
